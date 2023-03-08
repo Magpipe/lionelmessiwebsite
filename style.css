@@ -1,0 +1,181 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+/* RESET CSS */
+
+:root {
+    --main: rgb(67,161,213);
+    --light-main: rgb(177, 227, 253);
+}
+
+#banner {
+    display: block;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(67,161,213,0.6)),url(assets/banner.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+    padding-top: 30vh;
+    transition: 0.2s;
+}
+
+.banner-text h1 {
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-family: "Lobster", Arial, Helvetica, sans-serif;
+}
+
+.banner-text p {
+    font-size: 40px;
+    font-family: "DM Serif Display", Helvetica, Arial, sans-serif;
+}
+
+.banner-text span {
+    font-size: 40px;
+    font-family: "DM Serif Display", Helvetica, Arial, sans-serif;
+}
+
+.banner-text-button {
+    margin: 70px;
+}
+
+.banner-text-button a {
+    font-weight: bold;
+    width: 150px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 12px 12px;
+    color: white;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.banner-text-button a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.banner-text-button a:hover span {
+    width:100%;
+}
+
+.banner-text-button a:hover {
+    color: black;
+}
+
+#sideNav {
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    transition: 0.5s;
+}
+
+#sideNav ul li {
+    margin: 25px 24%;
+}
+
+#sideNav ul li a {
+    color: black;
+}
+
+#menuBtn {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1 {
+        font-size: 44px;
+    }
+    .banner-text p {
+        font-size: 35px;
+    }
+    .banner-text-button a{
+        display: block;
+        margin: 20px auto;
+    }
+    .banner-text span {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-height: 410px){
+    .banner-text {
+        padding-top: 10px;
+    }
+}
+
+#about {
+    width: 100%;
+    padding: 10vh 0;
+}
+
+.about-title {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.about-title p {
+    color: var(--main);
+    font-weight: bold;
+}
+
+.about-title h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.about-text {
+    margin: 0 20px;
+    text-indent: 20px;
+}

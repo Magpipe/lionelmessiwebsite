@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="banner">
+        <img src="assets/jersey.png" class="logo">
+        <div class="banner-text">
+            <h1>Lionel Messi</h1>
+            <p>The <span style="color:var(--light-main); text-decoration: underline; text-decoration-color: white;">Greatest</span> of All Time?</p>
+            <div class="banner-text-button">
+                <a href="#"><span></span>Agree</a>
+                <a href="#"><span></span>Disagree</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#">About Messi</a></li>
+                <li><a href="#">Titles and Awards</a></li>
+                <li><a href="#">The Rivalry</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="assets/menubutton.png" id="menu">
+    </div>
+
+    <!--About Messi-->
+    <section id="about">
+        <div class="about-title">
+            <p>ABOUT</p>
+            <h1>Lionel Messi</h1>
+        </div>
+        <div class="about-text">
+            <span style="text-indent: 5px"><p>Lionel Andrés Messi (born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward.</p></span>
+            <br>
+            <p>- Messi relocated to Spain from Argentina aged 13 to join Barcelona, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning four consecutive Ballons d'Or, making him the first player to win the award four times. During the 2011–12 season, he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer. The following two seasons, Messi finished second for the Ballon d'Or behind Cristiano Ronaldo (his perceived career rival), before regaining his best form during the 2014–15 campaign, becoming the all-time top scorer in La Liga and leading Barcelona to a historic second treble, after which he was awarded a fifth Ballon d'Or in 2015. Messi assumed captaincy of Barcelona in 2018, and won a record sixth Ballon d'Or in 2019. Out of contract, he signed for Paris Saint-Germain in August 2021.</p>
+            <br>
+            <p>- An Argentine international, Messi is the country's all-time leading goalscorer and also holds the national record for appearances. At youth level, he won the 2005 FIFA World Youth Championship, finishing the tournament with both the Golden Ball and Golden Shoe, and an Olympic gold medal at the 2008 Summer Olympics. His style of play as a diminutive, left-footed dribbler drew comparisons with his compatriot Diego Maradona, who described Messi as his successor. After his senior debut in August 2005, Messi became the youngest Argentine to play and score in a FIFA World Cup (2006), and reached the final of the 2007 Copa América, where he was named young player of the tournament. As the squad's captain from August 2011, he led Argentina to three consecutive finals: the 2014 FIFA World Cup, for which he won the Golden Ball, the 2015 Copa América, winning the Golden Ball, and the 2016 Copa América. After announcing his international retirement in 2016, he reversed his decision and led his country to qualification for the 2018 FIFA World Cup, a third-place finish at the 2019 Copa América, and victory in the 2021 Copa América, while winning the Golden Ball and Golden Boot for the latter. For this achievement, Messi received a record seventh Ballon d'Or in 2021. In 2022, he led Argentina to win the 2022 FIFA World Cup, where he won a record second Golden Ball, became the first player to score at every stage of the World Cup, and broke the record for most appearances in World Cup tournaments with 26 matches played.</p>
+        </div>
+    </section>
+
+    <!--Open/close Navigation Bar-->
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function() {
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0px";
+                menu.src = "assets/menuclose.png"
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "assets/menubutton.png";
+            }
+        }
+    </script>
+</body>
+</html>
